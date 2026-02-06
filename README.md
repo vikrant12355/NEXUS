@@ -41,8 +41,9 @@ To launch the web application on your local host:
 npm run web
 ```
 
-The app usually starts on [http://localhost:8081](http://localhost:8081).
-If that port is busy, it may switch to 8082 or 8083. **Check your terminal output** for the exact URL.
+The application runs on [http://localhost:8081](http://localhost:8081) by default.
+
+> **Note**: If port 8081 is busy, the app will automatically pick the next available port (e.g., 8082). Check your terminal output for the exact URL.
 
 #### iOS / Android
 
