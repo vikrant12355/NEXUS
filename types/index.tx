@@ -1,0 +1,137 @@
+export interface MessMenuItem {
+  id: string;
+  name: string;
+  type: 'breakfast' | 'lunch' | 'snacks' | 'dinner';
+  items: string[];
+  time: string;
+  isVeg: boolean;
+}
+
+export interface Email {
+  id: string;
+  from: string;
+  subject: string;
+  body: string;
+  date: string;
+  isRead: boolean;
+  priority: 'low' | 'medium' | 'high';
+}
+
+export interface EmailSummary {
+  summary: string;
+  actionItems: string[];
+  deadline?: string;
+  priority: 'low' | 'medium' | 'high';
+  category: string;
+}
+
+export interface CampusAlert {
+  id: string;
+  title: string;
+  description: string;
+  type: 'info' | 'warning' | 'urgent' | 'event';
+  date: string;
+  icon: string;
+}
+
+export interface ClassSchedule {
+  id: string;
+  subject: string;
+  code: string;
+  instructor: string;
+  room: string;
+  startTime: string;
+  endTime: string;
+  day: string;
+  color: string;
+}
+
+export interface Assignment {
+  id: string;
+  title: string;
+  course: string;
+  courseCode: string;
+  dueDate: string;
+  status: 'pending' | 'submitted' | 'graded';
+  grade?: number;
+  maxGrade?: number;
+  priority: 'low' | 'medium' | 'high';
+}
+
+export interface MarketplaceItem {
+  id: string;
+  title: string;
+  description: string;
+  price: number;
+  category: string;
+  image: string;
+  seller: string;
+  sellerAvatar: string;
+  postedAt: string;
+  condition: 'new' | 'like-new' | 'good' | 'fair';
+}
+
+export interface LostFoundItem {
+  id: string;
+  title: string;
+  description: string;
+  type: 'lost' | 'found';
+  category: string;
+  location: string;
+  date: string;
+  image: string;
+  contact: string;
+  status: 'active' | 'resolved';
+}
+
+export interface CabPool {
+  id: string;
+  from: string;
+  to: string;
+  date: string;
+  time: string;
+  seatsAvailable: number;
+  totalSeats: number;
+  price: number;
+  organizer: string;
+  organizerAvatar: string;
+  participants: string[];
+}
+
+export interface Place {
+  id: string;
+  name: string;
+  category: string;
+  rating: number;
+  distance: string;
+  image: string;
+  priceLevel: number;
+  isOpen: boolean;
+  tags: string[];
+  address: string;
+}
+
+export interface Event {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  time: string;
+  location: string;
+  image: string;
+  organizer: string;
+  attendees: number;
+  category: string;
+}
+
+export interface UserProfile {
+  id: string;
+  name: string;
+  email: string;
+  avatar: string;
+  department: string;
+  year: string;
+  rollNumber: string;
+  cgpa: number;
+  attendance: number;
+}
