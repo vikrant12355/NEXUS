@@ -19,8 +19,8 @@ Follow these steps to run the application locally on your machine.
 1.  **Clone the repository**
 
     ```bash
-    git clone <YOUR_GIT_URL>
-    cd Project Nexus
+    git clone https://github.com/vikrant12355/NEXUS.git
+    cd NEXUS
     ```
 
 2.  **Install dependencies**
@@ -38,10 +38,10 @@ Follow these steps to run the application locally on your machine.
 To launch the web application on your local host:
 
 ```bash
-npm run start-web
+npm run web
 ```
 
-Open [http://localhost:8081](http://localhost:8081) in your browser to view the app.
+Open [http://localhost:8081](http://localhost:8081) in your browser to view the app. (If port 8081 is busy, the CLI will prompt you to use another port, e.g., 8082).
 
 #### iOS / Android
 
