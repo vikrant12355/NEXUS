@@ -3,9 +3,10 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx rork start -p 1nbtrmt6z4o6zgqbf5qug",
-    "start-web": "npx rork start -p 1nbtrmt6z4o6zgqbf5qug --web",
-    "start-web-dev": "DEBUG=expo* npx rork start -p 1nbtrmt6z4o6zgqbf5qug --web",
+    "start": "npx expo start",
+    "android": "npx expo start --android",
+    "ios": "npx expo start --ios",
+    "web": "npx expo start --web",
     "lint": "expo lint"
   },
   "dependencies": {
